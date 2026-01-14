@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional trench drain installation in Sherrill Ford, NC. Perfect for driveways, patios, and areas with heavy water flow. Durable, effective, and built to last.">
-    <meta name="keywords" content="French drain, drainage solutions, Sherrill Ford NC, Trench Drain Installation & Repair">
-    <title>Trench Drain Installation | Sherrill Ford French Drains</title>
+    <meta name="description" content="Expert trench drain installation in Sherrill Ford NC. Professional surface water management solutions for driveways, patios, and high-traffic areas with custom channel drain systems.">
+    <meta name="keywords" content="trench drain installation, channel drains, driveway drainage, Sherrill Ford NC, surface water management, patio drainage">
+    <title>Expert Trench Drain Installation in Sherrill Ford NC | Professional Surface Drainage Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -30,6 +30,22 @@
         .btn-primary:hover {
             background-color: white;
             color: #FF5A5F;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
+        }
+        .btn-secondary {
+            background-color: white;
+            color: #FF5A5F;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            border: 2px solid #FF5A5F;
+        }
+        .btn-secondary:hover {
+            background-color: #FF5A5F;
+            color: white;
             transform: scale(1.05);
             box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
         }
@@ -61,6 +77,13 @@
             color: #FF5A5F;
             padding-left: 20px;
         }
+        .faq-item { cursor: pointer; }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-answer.active { max-height: 500px; }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -94,8 +117,10 @@
                         <a href="service-area-sherrills-ford-nc.html" class="dropdown-item">Sherrill's Ford</a>
                         <a href="service-area-mooresville-nc.html" class="dropdown-item">Mooresville</a>
                         <a href="service-area-denver-nc.html" class="dropdown-item">Denver</a>
-                        <a href="service-area-lake-norman-nc.html" class="dropdown-item">Lake Norman</a>
+                        <a href="service-area-charlotte-nc.html" class="dropdown-item">Charlotte</a>
                         <a href="service-area-huntersville-nc.html" class="dropdown-item">Huntersville</a>
+                        <a href="service-area-cornelius-nc.html" class="dropdown-item">Cornelius</a>
+                        <a href="service-area-lake-norman-nc.html" class="dropdown-item">Lake Norman</a>
                     </div>
                 </div>
 
@@ -111,114 +136,384 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
+    <section class="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <i class="fas fa-road text-6xl mb-6 text-accent"></i>
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Trench Drain Installation & Repair</h1>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                    Heavy-duty drainage for driveways, patios, and commercial properties
+            <div class="max-w-4xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Expert Trench Drain Installation in Sherrill Ford NC</h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Protect your driveways, patios, and high-traffic areas with professional trench drain systems. Our custom channel drain solutions efficiently manage surface water while providing durability and aesthetic appeal.
                 </p>
-                <a href="contact.html" class="btn-primary text-lg px-8 py-4">
-                    Get Your Free Estimate
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <a href="contact.html" class="btn-primary text-lg">Schedule Free Consultation</a>
+                    <a href="tel:7045550123" class="btn-secondary text-lg">Call Now</a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i>
+                        <span>High-Capacity Systems</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i>
+                        <span>Custom Grating Options</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i>
+                        <span>ADA Compliant</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i>
+                        <span>Traffic-Rated Designs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Benefits Bar -->
+    <section class="bg-gray-50 py-8 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                    <i class="fas fa-tachometer-alt text-3xl text-primary mb-2"></i>
+                    <h3 class="font-bold text-lg">High-Capacity Flow</h3>
+                    <p class="text-gray-600">Handles Heavy Rainfall</p>
+                </div>
+                <div>
+                    <i class="fas fa-shield-alt text-3xl text-primary mb-2"></i>
+                    <h3 class="font-bold text-lg">Durable Construction</h3>
+                    <p class="text-gray-600">Built to Last Decades</p>
+                </div>
+                <div>
+                    <i class="fas fa-palette text-3xl text-primary mb-2"></i>
+                    <h3 class="font-bold text-lg">Attractive Designs</h3>
+                    <p class="text-gray-600">Multiple Grate Styles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Trench Drain Installation -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-6">What is Trench Drain Installation?</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                <p>
+                    A trench drain, also known as a channel drain or linear drain, is a surface drainage system designed to collect and redirect large volumes of water from paved surfaces. It consists of a long, narrow channel covered by a grate that allows water to flow into an underground drainage pipe while keeping debris out.
+                </p>
+                <p>
+                    Unlike French drains that manage subsurface water, trench drains excel at handling surface runoff on hardscaped areas like driveways, patios, pool decks, parking areas, and commercial properties. They're particularly effective in areas where water accumulates quickly during heavy rainfall or where traditional drainage methods would be inadequate.
+                </p>
+                <p>
+                    Modern trench drains offer customizable grate designs, load ratings for vehicular traffic, and corrosion-resistant materials. When professionally installed with proper slope and positioning, they provide decades of reliable surface water management while enhancing the safety and appearance of your property.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">How Trench Drains Work</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-water text-5xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Surface Collection</h3>
+                    <p class="text-gray-600 text-center">
+                        Water flows across paved surfaces and into the grated channel, preventing pooling and flooding in critical areas.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-filter text-5xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Debris Filtration</h3>
+                    <p class="text-gray-600 text-center">
+                        Grates filter out leaves, debris, and sediment while allowing clean water to flow into the drainage system.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-route text-5xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Efficient Discharge</h3>
+                    <p class="text-gray-600 text-center">
+                        Collected water is channeled through underground pipes to storm drains or designated drainage areas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Benefits of Trench Drain Installation</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Discover why trench drains are the premier solution for surface water management on driveways, patios, and commercial properties.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-car text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Protects Driveways & Pavement</h3>
+                    <p class="text-gray-600">
+                        Prevents water damage to asphalt and concrete surfaces by quickly removing standing water. This extends the life of your driveway, prevents cracking from freeze-thaw cycles, and eliminates hazardous ice formation in winter.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-tachometer-alt text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">High-Capacity Performance</h3>
+                    <p class="text-gray-600">
+                        Trench drains handle significantly more water flow than traditional point drains or catch basins. Their linear design intercepts water across a wide area, making them ideal for heavy rainfall and high-volume drainage needs.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-eye text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Aesthetic Appeal</h3>
+                    <p class="text-gray-600">
+                        Choose from decorative grate designs that complement your property's style. Available in various finishes including stainless steel, cast iron, and powder-coated options that enhance rather than detract from your landscape.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-walking text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Improves Safety</h3>
+                    <p class="text-gray-600">
+                        Eliminates slippery puddles and standing water that create slip hazards. ADA-compliant grate designs ensure accessibility for wheelchairs and walkers while providing safe passage for pedestrians of all ages.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-wrench text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Easy Maintenance</h3>
+                    <p class="text-gray-600">
+                        Removable grates provide quick access for cleaning and inspection. Most systems require only periodic debris removal to maintain peak performance, making them far more convenient than buried drainage systems.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-expand-arrows-alt text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Versatile Applications</h3>
+                    <p class="text-gray-600">
+                        Perfect for residential driveways, commercial parking lots, pool decks, garage entrances, loading docks, and anywhere surface water management is critical. Custom sizes available for any application.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Process -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Our Trench Drain Installation Process</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                We follow a comprehensive, professional approach to ensure your trench drain system is properly designed, installed, and tested for optimal performance.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Site Evaluation</h3>
+                    <p class="text-gray-600">
+                        We assess your property's water flow patterns, surface grades, traffic requirements, and discharge options to determine the optimal trench drain placement and sizing.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Custom System Design</h3>
+                    <p class="text-gray-600">
+                        We design your trench drain system with appropriate load ratings, channel width, grate style, and slope calculations to ensure maximum efficiency and longevity.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Professional Installation</h3>
+                    <p class="text-gray-600">
+                        Our licensed team excavates the trench, installs the channel system with proper slope, connects discharge piping, and sets the grates flush with your pavement surface.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Testing & Finishing</h3>
+                    <p class="text-gray-600">
+                        We conduct flow tests to verify proper drainage, seal all connections, and provide care instructions along with our comprehensive warranty coverage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">We Service You Here</h2>
+            <p class="text-center text-gray-600 mb-12">Professional trench drain services throughout North Carolina</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <a href="service-area-sherrills-ford-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Sherrill Ford</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-charlotte-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Charlotte</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-mooresville-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Mooresville</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-denver-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Denver</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-huntersville-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Huntersville</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-cornelius-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Cornelius</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-lake-norman-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Lake Norman</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Introduction -->
-    <section class="py-16">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-lg text-gray-600 leading-relaxed">
-                Trench drains are ideal for managing large volumes of water in specific areas. Whether it's your driveway, patio, or commercial property, our trench drain systems provide superior water management and protection.
-            </p>
-        </div>
-    </section>
-
-    <!-- Benefits -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">Benefits of Our Service</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-car text-4xl text-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Driveway Protection</h3>
-                    <p class="text-gray-600">Prevent water pooling and ice formation on driveways</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-industry text-4xl text-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Commercial Solutions</h3>
-                    <p class="text-gray-600">Heavy-duty systems for parking lots and loading areas</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-swimming-pool text-4xl text-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Pool & Patio</h3>
-                    <p class="text-gray-600">Keep pool decks and patios dry and safe</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-wrench text-4xl text-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Custom Solutions</h3>
-                    <p class="text-gray-600">Tailored to your specific drainage needs</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Process -->
-    <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Process</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                        1
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Site Evaluation</h3>
-                    <p class="text-gray-600">We analyze water flow patterns and problem areas</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                        2
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">System Design</h3>
-                    <p class="text-gray-600">We design a trench drain system for optimal performance</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                        3
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Installation</h3>
-                    <p class="text-gray-600">Professional installation with quality materials</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                        4
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Testing</h3>
-                    <p class="text-gray-600">We verify proper function and water flow</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
     <!-- CTA Section -->
-    <section class="py-16 bg-primary text-white">
+    <section class="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
-            <p class="text-xl mb-8">Contact us today for a free, no-obligation estimate!</p>
-            <a href="contact.html" class="inline-block bg-white text-primary px-8 py-4 rounded font-bold text-lg hover:bg-gray-100 transition-colors">
-                Get Your Free Quote
-            </a>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Protect Your Property?</h2>
+            <p class="text-xl mb-8">
+                Schedule your free trench drain consultation today. Our experts will assess your property and design a custom solution to eliminate surface water problems permanently.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="contact.html" class="bg-primary text-white px-8 py-4 rounded font-bold text-lg hover:bg-white hover:text-primary transition-colors border-2 border-primary">
+                    Schedule Free Consultation
+                </a>
+                <a href="tel:7045550123" class="bg-white text-gray-900 px-8 py-4 rounded font-bold text-lg hover:bg-gray-100 transition-colors">
+                    Call (704) 555-0123
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Trench Drain Installation FAQ</h2>
+            <p class="text-center text-gray-600 mb-12">Find answers to common questions about trench drain installation and maintenance.</p>
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">What's the difference between trench drains and French drains?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            Trench drains manage surface water on paved areas using a visible grated channel, while French drains handle subsurface groundwater using buried perforated pipes. Trench drains are ideal for driveways and patios, whereas French drains are better for foundation protection and yard drainage. Many properties benefit from both systems working together.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">How much does trench drain installation cost?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            Trench drain installation costs vary based on length, load rating requirements, grate style, and site conditions. Residential driveway installations typically range from $40-$100 per linear foot, while commercial or heavy-duty applications may cost more. We provide detailed, transparent quotes after assessing your specific needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">Where should trench drains be installed?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            Trench drains should be installed at low points where water accumulates, across driveway aprons, at garage entrances, around pool decks, and anywhere surface water needs to be quickly removed. We position them perpendicular to water flow for maximum collection efficiency and aesthetics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">Can trench drains handle vehicle traffic?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            Yes, we install traffic-rated trench drain systems designed to withstand vehicle loads. Different load ratings are available from pedestrian-only (Class A) to heavy commercial trucks (Class F). We'll recommend the appropriate rating based on your expected traffic patterns to ensure long-term durability.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">How do I maintain my trench drain?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            Maintenance is simple: remove debris from grates monthly, flush the channel with water quarterly, and have the system professionally cleaned annually. The removable grates make this easy. Regular maintenance prevents clogs and ensures your trench drain operates at peak efficiency for decades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Request a Free Estimate</h2>
+            <p class="text-center text-gray-600 mb-8">Get a customized quote for your trench drain installation project</p>
+            <form action="https://formspree.io/f/mkogdqaz" method="POST" class="bg-white p-8 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="name">Name *</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="email">Email *</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="service">Service Needed *</label>
+                    <select id="service" name="service" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                        <option value="">Select a service...</option>
+                        <option value="French Drain Installation">French Drain Installation</option>
+                        <option value="Trench Drains">Trench Drains</option>
+                        <option value="Drain Cleaning & Maintenance">Drain Cleaning & Maintenance</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                </div>
+                <button type="submit" class="w-full btn-primary text-lg">Send Request</button>
+            </form>
         </div>
     </section>
 
@@ -287,6 +582,32 @@
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
             alert('Mobile menu coming soon!');
         });
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                }
+            });
+            document.querySelectorAll('.faq-item i').forEach(item => {
+                if (item !== icon) {
+                    item.style.transform = 'rotate(0deg)';
+                }
+            });
+
+            // Toggle current FAQ
+            answer.classList.toggle('active');
+            if (answer.classList.contains('active')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
     </script>
 </body>
 </html>

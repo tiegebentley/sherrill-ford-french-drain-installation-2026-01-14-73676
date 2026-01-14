@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional drain cleaning and maintenance in Sherrill Ford, NC. Regular maintenance prevents clogs and ensures your drainage system operates at peak efficiency.">
-    <meta name="keywords" content="French drain, drainage solutions, Sherrill Ford NC, Drain Cleaning & Maintenance Services">
-    <title>Drain Cleaning & Maintenance | Sherrill Ford French Drains</title>
+    <meta name="description" content="Professional drain cleaning and maintenance in Sherrill Ford NC. Preventative service to extend system life, maintain peak performance, and protect your property investment.">
+    <meta name="keywords" content="drain cleaning, drain maintenance, French drain service, Sherrill Ford NC, preventative drainage maintenance">
+    <title>Professional Drain Cleaning & Maintenance in Sherrill Ford NC | Protect Your Investment</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -30,6 +30,22 @@
         .btn-primary:hover {
             background-color: white;
             color: #FF5A5F;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
+        }
+        .btn-secondary {
+            background-color: white;
+            color: #FF5A5F;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            border: 2px solid #FF5A5F;
+        }
+        .btn-secondary:hover {
+            background-color: #FF5A5F;
+            color: white;
             transform: scale(1.05);
             box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
         }
@@ -61,6 +77,13 @@
             color: #FF5A5F;
             padding-left: 20px;
         }
+        .faq-item { cursor: pointer; }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-answer.active { max-height: 500px; }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -94,8 +117,10 @@
                         <a href="service-area-sherrills-ford-nc.html" class="dropdown-item">Sherrill's Ford</a>
                         <a href="service-area-mooresville-nc.html" class="dropdown-item">Mooresville</a>
                         <a href="service-area-denver-nc.html" class="dropdown-item">Denver</a>
-                        <a href="service-area-lake-norman-nc.html" class="dropdown-item">Lake Norman</a>
+                        <a href="service-area-charlotte-nc.html" class="dropdown-item">Charlotte</a>
                         <a href="service-area-huntersville-nc.html" class="dropdown-item">Huntersville</a>
+                        <a href="service-area-cornelius-nc.html" class="dropdown-item">Cornelius</a>
+                        <a href="service-area-lake-norman-nc.html" class="dropdown-item">Lake Norman</a>
                     </div>
                 </div>
 
@@ -111,114 +136,384 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
+    <section class="bg-gradient-to-br from-green-900 to-green-800 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <i class="fas fa-broom text-6xl mb-6 text-accent"></i>
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Drain Cleaning & Maintenance Services</h1>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                    Keep your drainage system flowing freely year-round
+            <div class="max-w-4xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Drain Cleaning & Maintenance in Sherrill Ford NC</h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Protect your drainage investment with preventative maintenance services. Our professional cleaning extends system life, maintains peak performance, and identifies problems before they become costly repairs.
                 </p>
-                <a href="contact.html" class="btn-primary text-lg px-8 py-4">
-                    Get Your Free Estimate
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <a href="contact.html" class="btn-primary text-lg">Schedule Service</a>
+                    <a href="tel:7045550123" class="btn-secondary text-lg">Call Now</a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i>
+                        <span>Professional Inspection</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i>
+                        <span>Thorough Cleaning</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i>
+                        <span>Performance Testing</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i>
+                        <span>Maintenance Plans</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Benefits Bar -->
+    <section class="bg-gray-50 py-8 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                    <i class="fas fa-shield-alt text-3xl text-primary mb-2"></i>
+                    <h3 class="font-bold text-lg">Prevent Failures</h3>
+                    <p class="text-gray-600">Stop Problems Before They Start</p>
+                </div>
+                <div>
+                    <i class="fas fa-clock text-3xl text-primary mb-2"></i>
+                    <h3 class="font-bold text-lg">Extend System Life</h3>
+                    <p class="text-gray-600">Maximize Your Investment</p>
+                </div>
+                <div>
+                    <i class="fas fa-dollar-sign text-3xl text-primary mb-2"></i>
+                    <h3 class="font-bold text-lg">Save Money</h3>
+                    <p class="text-gray-600">Avoid Costly Repairs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Drain Cleaning & Maintenance -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-6">What is Drain Cleaning & Maintenance?</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                <p>
+                    Professional drain cleaning and maintenance is a preventative service designed to keep your French drains, trench drains, and other drainage systems operating at peak efficiency. Over time, sediment, debris, and organic material can accumulate in drainage pipes and channels, reducing flow capacity and potentially causing system failure.
+                </p>
+                <p>
+                    Our comprehensive maintenance service includes thorough inspection of all drainage components, high-pressure flushing to remove buildup, verification of proper water flow, and identification of any developing issues. This proactive approach prevents minor problems from becoming major repairs and ensures your drainage system continues protecting your property year after year.
+                </p>
+                <p>
+                    Regular maintenance is especially important for French drains, where fine sediment can gradually clog the perforated pipe and surrounding gravel. Early detection and cleaning prevent expensive excavation and replacement, making maintenance one of the most cost-effective investments in your property's protection.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">How Our Maintenance Service Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-search text-5xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Comprehensive Inspection</h3>
+                    <p class="text-gray-600 text-center">
+                        We examine all drainage system components, check for damage, verify proper slope, and identify any signs of clogging or deterioration.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-broom text-5xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Professional Cleaning</h3>
+                    <p class="text-gray-600 text-center">
+                        Using specialized equipment, we flush pipes, remove accumulated sediment, clear debris from grates, and restore full flow capacity.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-clipboard-check text-5xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Performance Verification</h3>
+                    <p class="text-gray-600 text-center">
+                        We test water flow, verify proper drainage, document system condition, and provide recommendations for optimal performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Benefits of Regular Drain Maintenance</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Discover why preventative maintenance is essential for protecting your drainage system and property investment.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-ban text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Prevents Costly Clogs</h3>
+                    <p class="text-gray-600">
+                        Regular cleaning removes sediment and debris before they cause complete blockages. Prevention is far less expensive than emergency repairs or system replacement caused by neglected maintenance.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-hourglass-half text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Extends System Life</h3>
+                    <p class="text-gray-600">
+                        Proper maintenance can double or triple the lifespan of your drainage system. By preventing corrosion, sediment buildup, and component failure, you maximize your original installation investment.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-tachometer-alt text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Maintains Peak Performance</h3>
+                    <p class="text-gray-600">
+                        Even minor sediment accumulation reduces drainage capacity. Regular cleaning ensures your system handles heavy rainfall as effectively as the day it was installed, providing reliable protection.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-exclamation-triangle text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Identifies Problems Early</h3>
+                    <p class="text-gray-600">
+                        Professional inspection catches developing issues like pipe damage, settlement, or root intrusion before they become emergencies. Early detection means simpler, less expensive repairs.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-home text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Protects Property Value</h3>
+                    <p class="text-gray-600">
+                        A well-maintained drainage system is a valuable asset that protects your foundation, landscaping, and overall property value. Documentation of regular maintenance enhances resale appeal.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-primary transition-all">
+                    <i class="fas fa-heart text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Peace of Mind</h3>
+                    <p class="text-gray-600">
+                        Know your drainage system is working properly before the next heavy storm. Regular professional service eliminates worry about basement flooding or water damage during severe weather.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Process -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Our Maintenance Service Process</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                We follow a systematic approach to ensure thorough inspection, cleaning, and documentation of your drainage system's condition.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Initial Assessment</h3>
+                    <p class="text-gray-600">
+                        We review your system's installation date, previous maintenance history, and any current drainage concerns. This helps us focus on areas most likely to need attention.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Inspection & Testing</h3>
+                    <p class="text-gray-600">
+                        We examine all visible components, test water flow rates, check for standing water or slow drainage, and use specialized equipment to inspect buried pipes when necessary.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cleaning & Flushing</h3>
+                    <p class="text-gray-600">
+                        Using high-pressure water jetting and specialized cleaning tools, we remove sediment, debris, and buildup. We clean grates, flush pipes, and ensure all components are functioning optimally.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Report & Recommendations</h3>
+                    <p class="text-gray-600">
+                        We provide a detailed condition report, document any issues found, recommend repairs if needed, and schedule your next maintenance visit to keep your system in peak condition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">We Service You Here</h2>
+            <p class="text-center text-gray-600 mb-12">Professional drain maintenance services throughout North Carolina</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <a href="service-area-sherrills-ford-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Sherrill Ford</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-charlotte-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Charlotte</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-mooresville-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Mooresville</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-denver-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Denver</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-huntersville-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Huntersville</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-cornelius-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Cornelius</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
+                </a>
+                <a href="service-area-lake-norman-nc.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-center group">
+                    <i class="fas fa-map-marker-alt text-3xl text-primary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg">Lake Norman</h3>
+                    <p class="text-gray-600 text-sm">North Carolina</p>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Introduction -->
-    <section class="py-16">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-lg text-gray-600 leading-relaxed">
-                Regular maintenance is essential to keep your drainage system working properly. Our comprehensive cleaning and maintenance services prevent clogs, remove debris, and extend the life of your drainage system.
-            </p>
-        </div>
-    </section>
-
-    <!-- Benefits -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">Benefits of Our Service</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-clock text-4xl text-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Prevent Problems</h3>
-                    <p class="text-gray-600">Regular maintenance prevents costly repairs</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-tint text-4xl text-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Optimal Flow</h3>
-                    <p class="text-gray-600">Keep drains flowing at maximum capacity</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-calendar-check text-4xl text-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Scheduled Service</h3>
-                    <p class="text-gray-600">Annual or seasonal maintenance plans available</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-tools text-4xl text-primary mb-4"></i>
-                    <h3 class="text-xl font-bold mb-3">Expert Care</h3>
-                    <p class="text-gray-600">Professional cleaning and inspection</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Process -->
-    <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Process</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                        1
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Inspection</h3>
-                    <p class="text-gray-600">We inspect your drainage system for issues</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                        2
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Cleaning</h3>
-                    <p class="text-gray-600">We remove debris, sediment, and blockages</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                        3
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Testing</h3>
-                    <p class="text-gray-600">We test water flow and system performance</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                        4
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Recommendations</h3>
-                    <p class="text-gray-600">We provide maintenance tips and future planning</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
     <!-- CTA Section -->
-    <section class="py-16 bg-primary text-white">
+    <section class="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
-            <p class="text-xl mb-8">Contact us today for a free, no-obligation estimate!</p>
-            <a href="contact.html" class="inline-block bg-white text-primary px-8 py-4 rounded font-bold text-lg hover:bg-gray-100 transition-colors">
-                Get Your Free Quote
-            </a>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Protect Your Investment?</h2>
+            <p class="text-xl mb-8">
+                Schedule your drainage system maintenance today. Our professional service keeps your drains flowing freely and protects your property from water damage.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="contact.html" class="bg-primary text-white px-8 py-4 rounded font-bold text-lg hover:bg-white hover:text-primary transition-colors border-2 border-primary">
+                    Schedule Maintenance
+                </a>
+                <a href="tel:7045550123" class="bg-white text-gray-900 px-8 py-4 rounded font-bold text-lg hover:bg-gray-100 transition-colors">
+                    Call (704) 555-0123
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Drain Maintenance FAQ</h2>
+            <p class="text-center text-gray-600 mb-12">Find answers to common questions about drain cleaning and maintenance services.</p>
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">How often should I have my drains cleaned?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            Most drainage systems benefit from professional cleaning every 2-3 years under normal conditions. However, systems in areas with heavy tree cover, clay soil, or frequent storms may need annual service. We'll assess your specific situation and recommend an optimal maintenance schedule based on your system's condition and environment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">What are signs my drainage system needs cleaning?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            Warning signs include slow drainage after rainfall, standing water in areas that previously drained well, water pooling near your foundation, damp spots in your yard, musty odors from drain outlets, or visible debris in trench drain grates. If you notice any of these issues, schedule professional inspection and cleaning promptly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">Can I clean my drains myself or do I need a professional?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            While you can perform basic maintenance like clearing visible debris from grates, professional service is essential for thorough cleaning. We use specialized equipment including high-pressure water jetting and inspection cameras that reach areas homeowners can't access. DIY attempts often miss buried sediment and may damage pipes if done improperly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">What's included in your maintenance service?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            Our comprehensive service includes visual inspection of all accessible components, high-pressure pipe flushing to remove sediment and debris, grate cleaning, flow testing to verify proper drainage, assessment of pipe condition and slope, identification of any damage or developing problems, and a detailed report with maintenance recommendations and scheduling for future service.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="faq-item p-6 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h3 class="font-bold text-lg">How much does drain maintenance cost?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600">
+                            Maintenance costs vary based on system size, accessibility, and condition. Most residential services range from $150-$400 for basic cleaning and inspection. This investment is minimal compared to the cost of repairing or replacing a neglected system. We offer annual maintenance plans that provide discounted rates and scheduled service to protect your investment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Schedule Your Maintenance Service</h2>
+            <p class="text-center text-gray-600 mb-8">Get your drainage system professionally cleaned and inspected</p>
+            <form action="https://formspree.io/f/mkogdqaz" method="POST" class="bg-white p-8 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="name">Name *</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="email">Email *</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="service">Service Needed *</label>
+                    <select id="service" name="service" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                        <option value="">Select a service...</option>
+                        <option value="French Drain Installation">French Drain Installation</option>
+                        <option value="Trench Drains">Trench Drains</option>
+                        <option value="Drain Cleaning & Maintenance">Drain Cleaning & Maintenance</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                </div>
+                <button type="submit" class="w-full btn-primary text-lg">Send Request</button>
+            </form>
         </div>
     </section>
 
@@ -287,6 +582,32 @@
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
             alert('Mobile menu coming soon!');
         });
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                }
+            });
+            document.querySelectorAll('.faq-item i').forEach(item => {
+                if (item !== icon) {
+                    item.style.transform = 'rotate(0deg)';
+                }
+            });
+
+            // Toggle current FAQ
+            answer.classList.toggle('active');
+            if (answer.classList.contains('active')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
     </script>
 </body>
 </html>
