@@ -1,0 +1,292 @@
+#!/bin/bash
+
+# Restructure Sherrill Ford French Drains site to match Denver NC Drainage Pros structure
+# while keeping the unique Sherrill Ford style (red/coral colors, Poppins font)
+
+cd /root/sherrills-ford-french-drains
+
+echo "Starting site restructure..."
+
+# Create about.html page
+cat > about.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Sherrill Ford French Drains - Your trusted drainage solution experts in Sherrill Ford, NC. Professional installation, quality service, and lifetime protection.">
+    <meta name="keywords" content="about french drains, drainage company, Sherrill Ford NC, professional drainage">
+    <title>About Us | Sherrill Ford French Drains</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        html { scroll-behavior: smooth; }
+        .text-primary { color: #FF5A5F; }
+        .bg-primary { background-color: #FF5A5F; }
+        .border-primary { border-color: #FF5A5F; }
+        .text-accent { color: #FFD166; }
+        .bg-accent { background-color: #FFD166; }
+        .btn-primary {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            border: 2px solid #FF5A5F;
+        }
+        .btn-primary:hover {
+            background-color: white;
+            color: #FF5A5F;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 200px;
+            z-index: 40;
+            margin-top: 0.5rem;
+        }
+        .dropdown-menu.active { display: block; }
+        .dropdown-item {
+            display: block;
+            padding: 12px 16px;
+            color: #374151;
+            text-decoration: none;
+            transition: all 300ms ease-out;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .dropdown-item:last-child { border-bottom: none; }
+        .dropdown-item:hover {
+            background-color: #fef2f2;
+            color: #FF5A5F;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fas fa-water text-3xl text-primary"></i>
+                <span class="text-xl font-bold">Sherrill Ford French Drains</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
+
+                <div class="relative services-link">
+                    <button class="services-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Services <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu services-dropdown">
+                        <a href="french-drain-installation.html" class="dropdown-item">French Drain Installation</a>
+                        <a href="trench-drains.html" class="dropdown-item">Trench Drains</a>
+                        <a href="drain-cleaning-maintenance.html" class="dropdown-item">Drain Cleaning & Maintenance</a>
+                    </div>
+                </div>
+
+                <div class="relative service-areas-link">
+                    <button class="areas-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Service Areas <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu areas-dropdown">
+                        <a href="service-area-sherrills-ford-nc.html" class="dropdown-item">Sherrill's Ford</a>
+                        <a href="service-area-mooresville-nc.html" class="dropdown-item">Mooresville</a>
+                        <a href="service-area-denver-nc.html" class="dropdown-item">Denver</a>
+                        <a href="service-area-lake-norman-nc.html" class="dropdown-item">Lake Norman</a>
+                        <a href="service-area-huntersville-nc.html" class="dropdown-item">Huntersville</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
+                <a href="blog.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Blog</a>
+                <a href="contact.html" class="btn-primary">Get Free Quote</a>
+            </div>
+
+            <button class="lg:hidden text-gray-700" id="mobile-menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-50 to-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">About Sherrill Ford French Drains</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Your trusted partner for professional drainage solutions in Sherrill Ford, NC and surrounding areas
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                    <p class="text-gray-600 mb-4">
+                        At Sherrill Ford French Drains, we've been protecting properties from water damage for years.
+                        What started as a local drainage service has grown into the most trusted name in French drain
+                        installation across the Lake Norman area.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        We understand that water problems don't wait, and neither do we. Our team is dedicated to
+                        providing fast, reliable, and permanent drainage solutions that protect your property and
+                        give you peace of mind.
+                    </p>
+                    <p class="text-gray-600">
+                        Every project we undertake is treated with the same level of care and professionalism, whether
+                        it's a small residential installation or a large commercial drainage system.
+                    </p>
+                </div>
+                <div class="bg-primary/10 p-8 rounded-lg">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-3xl text-primary"></i>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Licensed & Insured</h3>
+                                <p class="text-gray-600">Fully licensed and insured for your protection</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-award text-3xl text-primary"></i>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Quality Guaranteed</h3>
+                                <p class="text-gray-600">Lifetime warranty on all installations</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-users text-3xl text-primary"></i>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Expert Team</h3>
+                                <p class="text-gray-600">Trained professionals with years of experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Sherrill Ford French Drains?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-clock text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Fast Response</h3>
+                    <p class="text-gray-600">Same-day service available for emergencies. We understand water problems can't wait.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-dollar-sign text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Transparent Pricing</h3>
+                    <p class="text-gray-600">Free estimates with no hidden fees. You'll know the cost upfront before we begin.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-shield-alt text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Lifetime Warranty</h3>
+                    <p class="text-gray-600">Our work is guaranteed for life. Your investment is protected forever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Solve Your Drainage Problems?</h2>
+            <p class="text-xl mb-8">Get a free, no-obligation estimate today!</p>
+            <a href="contact.html" class="inline-block bg-white text-primary px-8 py-4 rounded font-bold text-lg hover:bg-gray-100 transition-colors">
+                Get Your Free Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Sherrill Ford French Drains</h3>
+                    <p class="text-gray-400">Professional drainage solutions for the Lake Norman area.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="french-drain-installation.html" class="text-gray-400 hover:text-white">French Drain Installation</a></li>
+                        <li><a href="trench-drains.html" class="text-gray-400 hover:text-white">Trench Drains</a></li>
+                        <li><a href="drain-cleaning-maintenance.html" class="text-gray-400 hover:text-white">Drain Cleaning & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (704) 555-0123</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@sherrillfordfrenchdrains.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Sherrill's Ford, NC</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Sherrill Ford French Drains. All rights reserved.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dropdown functionality
+        document.querySelector('.services-dropdown-btn')?.addEventListener('click', function(e) {
+            e.stopPropagation();
+            document.querySelector('.services-dropdown').classList.toggle('active');
+            document.querySelector('.areas-dropdown').classList.remove('active');
+        });
+
+        document.querySelector('.areas-dropdown-btn')?.addEventListener('click', function(e) {
+            e.stopPropagation();
+            document.querySelector('.areas-dropdown').classList.toggle('active');
+            document.querySelector('.services-dropdown').classList.remove('active');
+        });
+
+        document.addEventListener('click', function() {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('active'));
+        });
+
+        // Mobile menu
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            alert('Mobile menu coming soon!');
+        });
+    </script>
+</body>
+</html>
+EOF
+
+echo "✓ Created about.html"
+echo "Site restructure complete!"

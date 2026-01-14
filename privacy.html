@@ -133,24 +133,49 @@
 </head>
 <body class="bg-white text-secondary">
     <!-- Header -->
+        <!-- Header -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-            <div class="flex items-center justify-between w-full">
-                <!-- Logo -->
-                <a href="https://tiegebentley.github.io/sherrill-ford-french-drain-installation-2026-01-14-73676" class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fas fa-water text-3xl text-primary"></i>
+                <span class="text-xl font-bold">Sherrill Ford French Drains</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
+
+                <div class="relative services-link">
+                    <button class="services-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Services <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu services-dropdown">
+                        <a href="french-drain-installation.html" class="dropdown-item">French Drain Installation</a>
+                        <a href="trench-drains.html" class="dropdown-item">Trench Drains</a>
+                        <a href="drain-cleaning-maintenance.html" class="dropdown-item">Drain Cleaning & Maintenance</a>
                     </div>
-                    <span class="font-semibold text-lg text-secondary hidden sm:inline">Sherrill Ford</span>
-                </a>
-                
-                <!-- Back Link -->
-                <a href="https://tiegebentley.github.io/sherrill-ford-french-drain-installation-2026-01-14-73676" class="text-secondary hover:text-primary transition-colors duration-300 font-normal">
-                    ← Back
-                </a>
+                </div>
+
+                <div class="relative service-areas-link">
+                    <button class="areas-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Service Areas <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu areas-dropdown">
+                        <a href="service-area-sherrills-ford-nc.html" class="dropdown-item">Sherrill's Ford</a>
+                        <a href="service-area-mooresville-nc.html" class="dropdown-item">Mooresville</a>
+                        <a href="service-area-denver-nc.html" class="dropdown-item">Denver</a>
+                        <a href="service-area-lake-norman-nc.html" class="dropdown-item">Lake Norman</a>
+                        <a href="service-area-huntersville-nc.html" class="dropdown-item">Huntersville</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
+                <a href="blog.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Blog</a>
+                <a href="contact.html" class="btn-primary">Get Free Quote</a>
             </div>
+
+            <button class="lg:hidden text-gray-700" id="mobile-menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </nav>
     </header>
 
